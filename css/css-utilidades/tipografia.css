@@ -1,0 +1,29 @@
+.family-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.family-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.texto-pequeno {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.texto-pequeno-medium {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.015em;
+}
+
+.texto-medio {
+  font-size: 2.4rem;
+  line-height: 150%;
+}
+
+.texto-grande {
+  font-size: 6.4rem;
+  line-height: 112%;
+}

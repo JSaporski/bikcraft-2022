@@ -1,6 +1,6 @@
 #header {
   padding: 2rem 0;
-  background-color: var(--b);
+  background-color: var(--cor-12);
 }
 
 .header.container {
@@ -21,10 +21,7 @@
   position: relative;
   display: inline-block;
   padding: 1.2rem 0;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.8rem;
-  font-weight: 400;
-  color: var(--w);
+  color: inherit;
   transition: 0.3s ease-out;
 }
 
@@ -35,7 +32,7 @@
   width: 0;
   height: 0.2rem;
   margin-top: 0.4rem;
-  background-color: var(--w);
+  background-color: var(--cor-0);
   transition: width 0.3s ease-out;
 }
 
@@ -47,7 +44,7 @@
   .header-menu li a {
     padding: 1.2rem 1.6rem;
     border-radius: 0.5rem;
-    background-color: var(--c11);
+    background-color: var(--cor-11);
   }
 
   .header-menu li a::after {
@@ -55,7 +52,7 @@
   }
 
   .header-menu li a:hover {
-    background-color: var(--c10);
+    background-color: var(--cor-10);
   }
 
   .header-menu ul {
