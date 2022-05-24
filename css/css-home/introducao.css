@@ -29,20 +29,11 @@
 .introducao-img img {
   height: 100%;
   object-fit: cover;
-  border-radius: 0.5rem;
 }
 
 @media only screen and (max-width: 1200px) {
   .introducao-infos {
     padding-top: 6rem;
-  }
-
-  .introducao-infos h1 {
-    font-size: 4.8rem;
-  }
-
-  .introducao-infos p {
-    font-size: 1.8rem;
   }
 }
 
@@ -62,7 +53,6 @@
   }
 
   .introducao-infos h1 {
-    font-size: 3.2rem;
     margin-bottom: 1.6rem;
   }
 
@@ -73,6 +63,5 @@
   .introducao-img img {
     width: 100%;
     height: 30rem;
-    object-position: center;
   }
 }

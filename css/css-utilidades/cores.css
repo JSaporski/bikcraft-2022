@@ -19,6 +19,8 @@
   --cor-0: #fff;
 }
 
+/* Cores Primárias */
+
 .cor-p1 {
   color: var(--cor-p1);
 }
@@ -38,6 +40,8 @@
 .cor-p5 {
   color: var(--cor-p5);
 }
+
+/* Cores Secundárias */
 
 .cor-0 {
   color: var(--cor-0);
