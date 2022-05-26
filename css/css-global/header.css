@@ -1,5 +1,5 @@
 #header {
-  padding: 2rem 0;
+  padding-block: 2rem;
   background-color: var(--cor-12);
 }
 
@@ -32,7 +32,7 @@
   width: 0;
   height: 0.2rem;
   margin-top: 0.4rem;
-  background-color: var(--cor-0);
+  background-color: currentColor;
   transition: width 0.3s ease-out;
 }
 

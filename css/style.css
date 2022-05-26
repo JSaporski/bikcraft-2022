@@ -12,3 +12,12 @@
 
 /* Bicicletas */
 @import './css-bicicletas/bicicletas-lista.css';
+
+/* Tecnologia */
+@import './css-home/tecnologia.css';
+
+/* Parceiros */
+@import './css-home/parceiros.css';
+
+/* Depoimento */
+@import './css-home/depoimento.css';
