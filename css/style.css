@@ -4,6 +4,8 @@
 
 @import './css-global/header.css';
 
+@import './css-global/footer.css';
+
 /* Utilitário */
 @import './css-utilidades/componentes.css';
 
@@ -21,3 +23,6 @@
 
 /* Depoimento */
 @import './css-home/depoimento.css';
+
+/* Lista de Seguros */
+@import './css-seguros/seguros-lista.css';

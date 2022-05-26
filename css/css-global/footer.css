@@ -1,0 +1,86 @@
+#footer {
+  padding: 8rem 0 6rem;
+  background-color: var(--cor-12);
+}
+
+.footer.container {
+  display: grid;
+  grid-template-columns: 3fr 5fr 4fr;
+}
+
+.contato-infos span,
+.footer-menu span {
+  display: inline-block;
+  margin-bottom: 3.2rem;
+}
+
+.contato-infos p::before,
+.contato-infos p::after {
+  content: '';
+  position: absolute;
+  width: calc(100% - 14rem);
+  height: 0.2rem;
+  background-color: var(--cor-11);
+}
+
+.contato-infos p {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3.2rem;
+}
+
+.contato-infos p::after {
+  bottom: -1.5rem;
+  align-self: flex-end;
+}
+
+.social-media {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.footer-menu ul li + li {
+  margin-top: 2rem;
+}
+
+.footer-menu ul li a {
+  position: relative;
+  display: inline-block;
+  color: currentColor;
+}
+
+.copy {
+  grid-column: 1 / -1;
+  margin-top: 8rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .footer.container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer.container > svg {
+    grid-column: 1 / -1;
+    margin-bottom: 6rem;
+  }
+
+  .contato-infos p::before,
+  .contato-infos p::after {
+    width: calc(100% - 6rem);
+  }
+
+  .footer-menu ul li a {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .footer.container {
+    grid-template-columns: 1fr;
+  }
+
+  .contato-infos {
+    margin-bottom: 6rem;
+  }
+}

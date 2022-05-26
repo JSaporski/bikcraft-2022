@@ -21,10 +21,11 @@
   position: relative;
   display: inline-block;
   padding: 1.2rem 0;
-  color: inherit;
+  color: currentColor;
   transition: 0.3s ease-out;
 }
 
+.footer-menu ul li a::after,
 .header-menu li a::after {
   content: '';
   position: absolute;
@@ -36,6 +37,7 @@
   transition: width 0.3s ease-out;
 }
 
+.footer-menu ul li a:hover::after,
 .header-menu li a:hover::after {
   width: 100%;
 }
