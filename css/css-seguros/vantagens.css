@@ -1,0 +1,29 @@
+#vantagens {
+  padding-block: 12rem;
+  background-color: var(--cor-12);
+}
+
+#vantagens h2 {
+  margin-bottom: 8rem;
+}
+
+.vantagens-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24rem, max-content));
+  gap: 4rem 8rem;
+}
+
+.vantagens-lista li {
+  display: grid;
+  gap: 0.8rem;
+}
+
+@media only screen and (max-width: 800px) {
+  #vantagens {
+    padding-block: 6rem;
+  }
+
+  #vantagens h2 {
+    margin-bottom: 4rem;
+  }
+}

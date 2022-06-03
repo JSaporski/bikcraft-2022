@@ -1,0 +1,143 @@
+#bicicleta {
+  position: relative;
+  display: grid;
+  margin-block: 12rem;
+  padding-block: 4rem;
+}
+
+#bicicleta::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  display: block;
+  width: min(65vw, 160rem);
+  height: 100%;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+#bicicleta:nth-child(even)::before {
+  background-color: var(--cor-12);
+}
+
+#bicicleta:nth-child(odd)::before {
+  background-color: var(--cor-1);
+}
+
+#bicicleta .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.bicicleta-img {
+  position: relative;
+  display: grid;
+  justify-items: end;
+}
+
+.bicicleta-img img {
+  justify-self: stretch;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bicicleta-img span {
+  position: absolute;
+  top: 2rem;
+  padding: 0.8rem 1.6rem 0.8rem 0.8rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  background-color: var(--cor-12);
+}
+
+.bicicleta-infos h3::before {
+  content: '';
+  display: block;
+  width: 2.4rem;
+  height: 0.8rem;
+  margin-bottom: 0.8rem;
+  background-color: var(--cor-p1);
+}
+
+.bicicleta-infos h3 {
+  margin-bottom: 2rem;
+}
+
+.bicicleta-infos p {
+  max-width: 45ch;
+  margin-bottom: 3.2rem;
+}
+
+.bicicleta-infos-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.bicicleta-infos-lista li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.bicicleta-infos-lista li + li {
+  margin-top: 0.8rem;
+}
+
+.bicicleta-infos-lista li svg {
+  max-width: 2.4rem;
+}
+
+.bicicleta-infos-wrapper .btn {
+  place-self: end;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.bicicleta-infos-wrapper .btn svg {
+  transition: transform 0.3s ease-out;
+}
+
+.bicicleta-infos-wrapper .btn:hover svg {
+  transform: translateX(0.8rem);
+}
+
+@media only screen and (max-width: 940px) {
+  #bicicleta:nth-child(even) {
+    background: var(--cor-12);
+  }
+
+  #bicicleta:nth-child(odd) {
+    background: var(--cor-1);
+  }
+
+  #bicicleta {
+    margin-block: 0rem;
+  }
+
+  #bicicleta .container {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .bicicleta-img img {
+    height: 30rem;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .bicicleta-img img {
+    object-position: right bottom;
+  }
+
+  .bicicleta-infos-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .bicicleta-infos-wrapper .btn {
+    place-self: start;
+  }
+}

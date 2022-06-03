@@ -1,3 +1,29 @@
+/* Título de Introdução */
+
+.introducao-titulo {
+  padding-block: 6rem;
+  background-color: var(--cor-11);
+}
+
+.introducao-titulo h2 {
+  margin-bottom: 0.4rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .introducao-titulo {
+    padding-block: 3.2rem;
+  }
+
+  .introducao-titulo h2 {
+    font-size: 1.6rem;
+    text-transform: lowercase;
+  }
+
+  #nimbus-pagina .introducao-titulo h2 {
+    text-transform: uppercase;
+  }
+}
+
 /* Container */
 
 .container {
@@ -17,7 +43,6 @@
   border-radius: 0.5rem;
   background: linear-gradient(#ffbf00, #f2a60c);
   box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
-  transition: 0.3s ease-out;
 }
 
 .btn:hover {

@@ -1,0 +1,58 @@
+#seguros-interna {
+  padding-block: 6rem;
+  border-bottom: 12rem solid var(--cor-12);
+  background-color: var(--cor-11);
+}
+
+.seguros-interna.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.seguros-img {
+  margin-block: -18rem;
+}
+
+.seguros-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.seguros-interna-infos h2 {
+  margin-bottom: 3.2rem;
+}
+
+.seguros-interna-infos p {
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 800px) {
+  #seguros-interna {
+    padding-bottom: 4rem;
+    border-bottom: initial;
+  }
+
+  .seguros-interna.container {
+    grid-template-columns: 1fr;
+  }
+
+  .seguros-img {
+    margin-top: -10rem;
+    margin-bottom: 0rem;
+  }
+
+  .seguros-img img {
+    height: 30rem;
+    object-position: top center;
+  }
+
+  .seguros-interna-infos h2 {
+    max-width: 25ch;
+  }
+
+  .seguros-interna-infos p {
+    max-width: 45ch;
+  }
+}

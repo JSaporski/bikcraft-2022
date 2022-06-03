@@ -1,0 +1,127 @@
+#nimbus-pagina .introducao-titulo-infos {
+  margin-bottom: 6rem;
+}
+
+#nimbus {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.nimbus-slide {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: start;
+  gap: 2rem;
+}
+
+.nimbus-slide img:first-child {
+  grid-column: 1 / -1;
+}
+
+.nimbus-infos > p {
+  margin-bottom: 3.2rem;
+}
+
+.compra-infos {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 1.2rem;
+  margin-bottom: 4rem;
+}
+
+.compra-infos-wrapper > div {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  width: fit-content;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  background-color: var(--cor-12);
+}
+
+.compra-infos-wrapper > div + div {
+  margin-top: 0.8rem;
+}
+
+.nimbus-infos h2 {
+  display: block;
+  margin-bottom: 1.2rem;
+}
+
+.nimbus-caracteristicas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  margin-bottom: 4rem;
+  padding: 2.8rem;
+  border-radius: 0.5rem;
+  background-color: var(--cor-12);
+}
+
+.nimbus-caracteristicas li {
+  display: grid;
+  align-self: start;
+  gap: 0.8rem;
+}
+
+.nimbus-caracteristicas svg {
+  max-width: 2.4rem;
+}
+
+.nimbus-ficha-tecnica {
+  padding: 2.3rem 2.8rem;
+  border-radius: 0.5rem;
+  background-color: var(--cor-12);
+}
+
+.nimbus-ficha-tecnica li {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  padding-block: 0.5rem;
+  border-bottom: 0.2rem solid var(--cor-11);
+}
+
+.nimbus-ficha-tecnica li:last-child {
+  border-bottom: initial;
+}
+
+@media only screen and (max-width: 800px) {
+  #nimbus {
+    grid-template-columns: 1fr;
+  }
+
+  .nimbus-slide img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+  }
+
+  .nimbus-slide img:first-child {
+    height: 30rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #nimbus-pagina .introducao-titulo-infos {
+    margin-bottom: 3.2rem;
+  }
+
+  .compra-infos {
+    grid-template-columns: max-content;
+  }
+
+  .nimbus-caracteristicas {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .nimbus-slide img {
+    height: 10rem;
+  }
+
+  .nimbus-slide img:first-child {
+    height: 20rem;
+  }
+}

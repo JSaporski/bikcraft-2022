@@ -41,15 +41,26 @@ body {
 }
 
 .fonte-1-xsm,
-.fonte-1-xsm-medium {
+.fonte-1-xsm-medium,
+.fonte-1-xsm-medium-upper {
   font: 400 1.2rem/133% 'Poppins', sans-serif;
 }
 
-.fonte-1-xsm-medium {
+.fonte-1-xsm-medium,
+.fonte-1-xsm-medium-upper {
   font-weight: 600;
 }
 
+.fonte-1-xsm-medium-upper {
+  text-transform: uppercase;
+  letter-spacing: 0.015em;
+}
+
 /* Fonte do tipo 2: Roboto */
+
+.fonte-2-lg {
+  font: 500 3.6rem/133% 'Roboto', sans-serif;
+}
 
 .fonte-2-md,
 .fonte-2-md-medium {
@@ -94,6 +105,10 @@ body {
   .fonte-1-md,
   .fonte-1-md-medium {
     font-size: 1.8rem;
+  }
+
+  .fonte-2-lg {
+    font-size: 2.4rem;
   }
 
   .fonte-2-md,

@@ -1,0 +1,14 @@
+#nimbus-pagina #bicicletas {
+  padding-top: 8rem;
+}
+
+#nimbus-pagina .bicicletas-lista {
+  grid-template-columns: repeat(2, 1fr);
+  padding-inline: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  #nimbus-pagina #bicicletas {
+    padding-top: 4rem;
+  }
+}

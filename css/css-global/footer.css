@@ -40,14 +40,26 @@
   gap: 3.2rem;
 }
 
+.social-media a svg path {
+  transition: 0.3s ease-out;
+}
+
+.social-media a:hover svg path {
+  fill: var(--cor-p1);
+}
+
 .footer-menu ul li + li {
   margin-top: 2rem;
 }
 
 .footer-menu ul li a {
-  position: relative;
   display: inline-block;
   color: currentColor;
+  transition: 0.3s ease-out;
+}
+
+.footer-menu ul li a:hover {
+  color: var(--cor-p1);
 }
 
 .copy {
