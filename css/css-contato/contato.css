@@ -3,7 +3,6 @@
 }
 
 .contato {
-  margin-bottom: 12rem;
   background: linear-gradient(to bottom, var(--cor-11) 50%, var(--cor-1) 50%);
 }
 
@@ -15,12 +14,12 @@
 .contato-dados,
 .contato-form {
   padding: 6rem;
+  box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.1);
 }
 
 .contato-dados {
   border-radius: 0.5rem 0 0 0.5rem;
   background-color: var(--cor-12);
-  box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.1);
 }
 
 .contato-form {
@@ -101,6 +100,7 @@
   grid-column: 1 / -1;
   width: fit-content;
   border: none;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 880px) {
