@@ -17,6 +17,7 @@ svg {
 }
 
 img {
+  height: auto;
   border-radius: 0.5rem;
 }
 
@@ -26,4 +27,21 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+/* Retirando a decoração das seções */
+
+@media only screen and (max-width: 1200px) {
+  #introducao,
+  #seguros,
+  #depoimento .depoimento-infos,
+  #bicicleta,
+  .introducao-titulo,
+  #vantagens,
+  #seguros-interna,
+  #nimbus,
+  .contato-dados,
+  .orcamento-produto {
+    background-image: initial !important;
+  }
 }

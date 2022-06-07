@@ -1,6 +1,9 @@
 #seguros-interna {
   padding-block: 6rem;
   border-bottom: 12rem solid var(--cor-12);
+  background: url('../../img/dec/bottom-right.svg') no-repeat bottom 3rem right
+      2rem,
+    url('../../img/dec/top-right.svg') no-repeat top 3rem right 2rem;
   background-color: var(--cor-11);
 }
 

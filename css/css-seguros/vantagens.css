@@ -1,6 +1,7 @@
 #vantagens {
   padding-block: 12rem;
-  background-color: var(--cor-12);
+  background: var(--cor-12) url('../../img/dec/bottom-left.svg') no-repeat
+    bottom 3rem left 2rem;
 }
 
 #vantagens h2 {

@@ -1,0 +1,217 @@
+.orcamento {
+  padding-bottom: 12rem;
+  background: linear-gradient(to bottom, var(--cor-11) 30%, var(--cor-1) 30%);
+}
+
+.orcamento .container {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+}
+
+.orcamento h2::before {
+  content: '';
+  width: 0.4rem;
+  height: 1.2rem;
+  background-color: var(--cor-p1);
+}
+
+.orcamento h2 {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-left: -1.2rem;
+}
+
+.orcamento-produto {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: start;
+  gap: 2rem;
+  padding: 6rem;
+  background: var(--cor-12) url('../../img/dec/bottom-left.svg') no-repeat
+    bottom 4rem left 4rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+  box-shadow: 0 0.1rem 0.2rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.orcamento-produto > * {
+  grid-column: 1 / -1;
+}
+
+.orcamento-produto h2 {
+  margin-bottom: 2.8rem;
+}
+
+.orcamento-produto label::before {
+  content: '';
+  width: 1.4rem;
+  height: 1.4rem;
+  display: inline-block;
+  border-radius: 50%;
+  border: 0.1rem solid var(--cor-6);
+}
+
+.orcamento-produto input:checked + label::before {
+  border-color: var(--cor-7);
+  background-color: var(--cor-7);
+  box-shadow: inset 0 0 0 0.4rem var(--cor-0);
+}
+
+.orcamento-produto > label {
+  grid-column: initial;
+}
+
+.orcamento-produto label {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1.6rem;
+  font-weight: 400;
+  color: var(--cor-4);
+  border: 0.1rem solid transparent;
+  border-radius: 0.5rem;
+  background-color: var(--cor-10);
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+
+.orcamento-produto label:hover {
+  background-color: var(--cor-9);
+}
+
+.orcamento-produto input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.orcamento-produto input:checked + label {
+  color: var(--cor-11);
+  background-color: var(--cor-0);
+}
+
+.orcamento-produto input:focus + label {
+  border-color: var(--cor-12);
+  box-shadow: 0 0 0 0.2rem var(--cor-p1);
+}
+
+#bikcraft:checked ~ #orcamento-bikcraft,
+#seguro:checked ~ #orcamento-seguro {
+  display: block;
+}
+
+.orcamento-infos {
+  display: none;
+  margin-top: 4rem;
+}
+
+.orcamento-infos label > span,
+.orcamento-infos label img {
+  display: none;
+}
+
+.orcamento-infos input:checked + label > div {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin-top: 1.6rem;
+}
+
+.orcamento-infos input:checked + label > span,
+.orcamento-infos input:checked + label img {
+  display: initial;
+}
+
+.orcamento-infos input:checked + label img {
+  grid-column: 1 / -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.orcamento-infos label:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.orcamento .contato-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.input-cpf,
+.input-email {
+  grid-column: 1 / -1;
+}
+
+.input-email {
+  margin-bottom: 6rem;
+}
+
+.check-termos {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: max-content auto;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.check-termos input {
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 0.1rem solid var(--cor-4);
+  border-radius: 0.5rem;
+  background-color: var(--cor-1);
+}
+
+.check-termos p,
+.check-termos p a {
+  font-size: 1.6rem;
+}
+
+.check-termos p a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1000px) {
+  .orcamento-produto,
+  .orcamento-dados {
+    padding: 3rem;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .orcamento-produto {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+
+  .orcamento .container {
+    grid-template-columns: 1fr;
+  }
+
+  .orcamento-infos input:checked + label img {
+    height: 26rem;
+  }
+
+  .orcamento-dados {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .orcamento-produto {
+    grid-template-columns: 1fr;
+  }
+
+  .orcamento-infos input:checked + label img {
+    height: initial;
+  }
+
+  .orcamento .contato-form {
+    grid-template-columns: 1fr;
+  }
+}

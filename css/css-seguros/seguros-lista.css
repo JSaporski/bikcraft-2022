@@ -1,6 +1,7 @@
 #seguros {
   padding: 8rem 0 12rem;
-  background-color: var(--cor-11);
+  background: var(--cor-11) url('../../img/dec/bottom-left.svg') no-repeat
+    bottom 3rem left 2rem;
 }
 
 #seguros-pagina #seguros {

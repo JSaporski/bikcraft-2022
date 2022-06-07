@@ -19,7 +19,8 @@
 
 .contato-dados {
   border-radius: 0.5rem 0 0 0.5rem;
-  background-color: var(--cor-12);
+  background: var(--cor-12) url('../../img/dec/bottom-left.svg') no-repeat
+    bottom 4rem left 4rem;
 }
 
 .contato-form {
@@ -66,22 +67,21 @@
   gap: 2rem;
 }
 
-.contato-form form label {
+.contato-form label {
   display: block;
   margin-bottom: 0.4rem;
 }
 
-.contato-form form input,
+.contato-form input,
 .contato-form .textarea textarea {
   padding: 1.2rem;
   border-radius: 0.5rem;
   border: 0.1rem solid var(--cor-2);
   background-color: var(--cor-1);
+  outline-color: var(--cor-p1);
 }
 
-.contato-form .input-nome input,
-.contato-form .input-tel input,
-.contato-form .input-email input,
+.contato-form input,
 .contato-form .textarea textarea {
   width: 100%;
 }
@@ -101,6 +101,7 @@
   width: fit-content;
   border: none;
   cursor: pointer;
+  outline-color: var(--cor-p1);
 }
 
 @media only screen and (max-width: 880px) {
@@ -174,7 +175,7 @@
 
   .contato-dados,
   .contato-form {
-    padding: 2rem;
+    padding: 3rem;
   }
 
   .contato-dados .social-media {

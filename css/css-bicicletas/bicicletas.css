@@ -3,6 +3,7 @@
   display: grid;
   margin-block: 12rem;
   padding-block: 4rem;
+  background: url('../../img/dec/top-right.svg') no-repeat top 4rem right 2rem;
 }
 
 #bicicleta::before {
