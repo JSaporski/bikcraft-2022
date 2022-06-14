@@ -9,14 +9,14 @@
   background: url('../../img/dec/bottom-left.svg') no-repeat bottom left 2rem;
 }
 
-.nimbus-slide {
+.bicicleta-imagens {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-content: start;
   gap: 2rem;
 }
 
-.nimbus-slide img:first-child {
+.bicicleta-imagens img:first-child {
   grid-column: 1 / -1;
 }
 
@@ -92,13 +92,13 @@
     grid-template-columns: 1fr;
   }
 
-  .nimbus-slide img {
+  .bicicleta-imagens img {
     width: 100%;
     height: 20rem;
     object-fit: cover;
   }
 
-  .nimbus-slide img:first-child {
+  .bicicleta-imagens img:first-child {
     height: 30rem;
   }
 }
@@ -118,11 +118,11 @@
 }
 
 @media only screen and (max-width: 400px) {
-  .nimbus-slide img {
+  .bicicleta-imagens img {
     height: 10rem;
   }
 
-  .nimbus-slide img:first-child {
+  .bicicleta-imagens img:first-child {
     height: 20rem;
   }
 }

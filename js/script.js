@@ -49,3 +49,28 @@ function eventoPerguntas(pergunta) {
 }
 
 perguntas.forEach(eventoPerguntas)
+
+// Galeria de Bicicletas
+const galeria = document.querySelectorAll('.bicicleta-imagens img')
+const galeriaContainer = document.querySelector('.bicicleta-imagens')
+
+function trocarImagem(e) {
+  const img = e.currentTarget
+  galeriaContainer.prepend(img)
+}
+
+function eventosGaleria(img) {
+  img.addEventListener('click', trocarImagem)
+}
+
+galeria.forEach(eventosGaleria)
+
+// Simple Anime Plugin
+if (window.SimpleAnime) {
+  new SimpleAnime()
+}
+
+// ClipboardJS Plugin -------- Não será utilizado no projeto final, serve apenas para testes
+// if (window.ClipboardJS) {
+//   new ClipboardJS('.introducao-infos p')
+// }

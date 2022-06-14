@@ -37,3 +37,6 @@
 
 /* Orcamento */
 @import './css-orcamento/orcamento.css';
+
+/* Animações Simple Anime */
+@import './css-utilidades/animacao.css';

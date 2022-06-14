@@ -18,7 +18,12 @@
     />
     <link rel="preload" href="./css/style.css" as="style" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
+
     <title>Seguros - Bikcraft</title>
+
+    <script defer>
+      document.documentElement.classList.add('js')
+    </script>
   </head>
 
   <body id="seguros-pagina">
@@ -54,7 +59,7 @@
       <div id="seguros">
         <div class="seguros container">
           <ul class="seguros-lista">
-            <li class="seguros-prata">
+            <li class="seguros-prata fadeInLeft" data-anime="200">
               <div class="seguros-lista-header">
                 <h3 class="fonte-1-lg-upper cor-6">Prata</h3>
                 <div>
@@ -141,7 +146,7 @@
               >
             </li>
 
-            <li class="seguros-ouro">
+            <li class="seguros-ouro fadeInRight" data-anime="400">
               <div class="seguros-lista-header">
                 <h3 class="fonte-1-lg-upper cor-p1">Ouro</h3>
                 <div>
@@ -721,6 +726,8 @@
         </p>
       </div>
     </footer>
+
+    <script src="./js/plugins/simple-anime.js" type="text/javascript"></script>
     <script src="./js/script.js" type="text/javascript"></script>
   </body>
 </html>

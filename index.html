@@ -19,12 +19,17 @@
     />
     <link rel="preload" href="./css/style.css" as="style" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
+
     <title>Bikcraft - Bicicletas Personalizadas</title>
+
+    <script defer>
+      document.documentElement.classList.add('js')
+    </script>
   </head>
 
   <body id="home-pagina">
     <header id="header" aria-label="Cabeçalho do Site">
-      <div class="header container">
+      <div class="header container fadeInDown" data-anime="100">
         <a href="./index.html">
           <img
             src="./img/bikcraft.svg"
@@ -47,19 +52,21 @@
     <main id="introducao">
       <div class="introducao container">
         <div class="introducao-infos">
-          <h1 class="fonte-1-xlg cor-0">
+          <h1 class="fonte-1-xlg cor-0 fadeInDown" data-anime="400">
             Bicicletas feitas sob medida<span class="cor-p1">.</span>
           </h1>
 
-          <p class="fonte-2-md cor-5">
+          <p class="fonte-2-md cor-5 fadeInDown" data-anime="600">
             Bicicletas elétricas de alta precisão e qualidade, feitas sob medida
             para o cliente. Explore o mundo na sua velocidade com a Bikcraft.
           </p>
 
-          <a href="./bicicletas.html" class="btn">Selecione a Sua</a>
+          <a href="./bicicletas.html" class="btn fadeInDown" data-anime="900"
+            >Selecione a Sua</a
+          >
         </div>
 
-        <picture class="introducao-img">
+        <picture class="introducao-img fadeInDown" data-anime="1000">
           <source
             media="(max-width: 800px)"
             srcset="./img/bicicletas/nimbus.jpg"
@@ -729,6 +736,8 @@
       </div>
     </footer>
 
+    <script src="./js/plugins/simple-anime.js"></script>
+    <!-- <script src="./js/plugins/clipboard.min.js"></script> -->
     <script src="./js/script.js" type="text/javascript"></script>
   </body>
 </html>

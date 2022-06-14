@@ -57,11 +57,11 @@
   padding-left: 1.8rem;
 }
 
-.perguntas-lista dd {
+.js .perguntas-lista dd {
   display: none;
 }
 
-.perguntas-lista dd.ativa {
+.js .perguntas-lista dd.ativa {
   display: block;
 }
 
